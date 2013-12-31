@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <title>WAZE CSS </title>
+    <link rel="stylesheet" href="css/Waze.css">
+</head>
+<body>
+	<div id="layout">
+		<a href="#sidebar" id="menuLink" class="menu-link">
+            <span></span>
+        </a>
+		<div id="sidebar" >
+			<ul>
+				<a href=""><li class="side-head">WAZE</li></a>
+				<a href="index.html"><li>Grid</li></a>
+				<a href="buttons.html"><li class="active">Botões</li></a>
+				<a href="sidebar.html"><li>Sidebar</li></a>
+			</ul>
+			<center>
+				<a href="https://mega.co.nz/#!UdIlwQJS!O0txp3tQd-FGS1WgZIPT8D8n97AJvKEHAdEaCgFll9I"><input type="button" value="Download" class="button button-primary"></a>
+			</senter>
+		</div>
+		<div class="col-23-24 col-offset-1-24" id="page">
+			<h1>Botões</h1>
+			<div class="col-1">
+				<h3>Default Buttons</h3>
+				<input type="button" value="Default Button" class="button">
+				<input type="button" value="Disabled Button" class="button button-disabled">
+				<input type="button" value="Primary Button" class="button button-primary">
+			</div>		
+			<div class="col-1">
+				<h3>Colored Buttons</h3>
+				<input type="button" value="Success Button" class="button button-success">
+				<input type="button" value="Error Button" class="button button-error">
+				<input type="button" value="Warning Button" class="button button-warning">
+				<input type="button" value="Secondary Button" class="button button-secondary">
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/ui.js"></script>
+</body>
+</html>
