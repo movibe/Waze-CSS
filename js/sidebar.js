@@ -15,7 +15,6 @@
             break;
           }
         }
-        // The className is not found
         if (length === classes.length) {
             classes.push(className);
         }

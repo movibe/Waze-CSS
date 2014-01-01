@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <title>WAZE CSS - Grid</title>
+    <link rel="stylesheet" href="css/Waze.css">
+</head>
+<body>
+	<div id="layout">
+		<a href="#sidebar" id="menuLink"></a>
+		<div id="sidebar">
+			<ul>
+				<a href="index.html"><li class="header">Waze</li></a>
+				<a href="base.html"><li>Base</li></a>
+				<a href="grid.html"><li class="selected">Grid</li></a>
+				<a href="buttons.html"><li>Botões</li></a>
+				<a href="menu.html"><li>Menus</li></a>
+			</ul>
+			<center>
+				<a href="https://github.com/Waze-CSS/Waze-CSS"><input type="button" value="Download" class="button button-primary"></a>
+			</center>
+		</div>
+		<div class="col-11-12 col-offset-1-24" id="page">
+			<div class="col-1">
+				<h1>Grid</h1>
+			</div>
+
+			<h2>Introdução às Grids do Waze</h2>
+
+			<p>Grids Waze são fáceis de trabalhar, e muito poderosas. Existem alguns conceitos simples para manter em mente:</p>
+			<br>
+			<p><b>Linha contra classes de Colunas </b><br>
+			Grids Waze consistem em dois tipos de classes: Classe de linha ( row ) e classes de coluna ( col-* )</p>
+			<br>
+			<p><b>As larguras das colunas são frações</b> <br>
+			Colunas têm vários nomes de classe que representam suas larguras. Por exemplo, col-1-2 tem uma largura de 50%, enquanto col-1-5 teria uma largura de 20%.</p>
+			<br>
+			<p><b>Todos os elementos filho de uma linha deve ser coluna </b><br>
+			Elementos filho contidos dentro de um elemento com um row deve ser uma coluna com um col-*.</p>
+			<br>
+			<p><b> Conteúdo vai dentro unidades de grade </b><br>
+			Todo o conteúdo que é visível para as pessoas deve ser contido dentro de uma unidade row, isso garante que o conteúdo será processado corretamente.</p>
+
+			<h3>24ths-Based Cols</h3>
+			<div class="row">
+				<div class="col-1-24 panel">1-24</div>
+			</div>
+			<div class="row">
+				<div class="col-1-12 panel">1-12</div>
+			</div>
+			<div class="row">
+				<div class="col-1-8 panel">1-8</div>
+			</div>
+			<div class="row">
+				<div class="col-1-6 panel">1-6</div>
+			</div>
+			<div class="row">
+				<div class="col-5-24 panel">5-24</div>
+			</div>
+			<div class="row">
+				<div class="col-1-4 panel">1-4</div>
+			</div>
+			<div class="row">
+				<div class="col-7-24 panel">7-24</div>
+			</div>
+			<div class="row">
+				<div class="col-1-3 panel">1-3</div>
+			</div>
+			<div class="row">
+				<div class="col-3-8 panel">3-8</div>
+			</div>
+			<div class="row">
+				<div class="col-5-12 panel">5-12</div>
+			</div>
+			<div class="row">
+				<div class="col-11-24 panel">11-24</div>
+			</div>
+			<div class="row">
+				<div class="col-1-2 panel">1-2 ou 12-24</div>
+			</div>
+			<div class="row">
+				<div class="col-13-24 panel">13-24</div>
+			</div>
+			<div class="row">
+				<div class="col-7-12 panel">7-12</div>
+			</div>
+			<div class="row">
+				<div class="col-5-8 panel">5-8</div>
+			</div>
+			<div class="row">
+				<div class="col-2-3 panel">2-3</div>
+			</div>
+			<div class="row">
+				<div class="col-17-24 panel">17-24</div>
+			</div>
+			<div class="row">
+				<div class="col-3-4 panel">3-4</div>
+			</div>
+			<div class="row">
+				<div class="col-19-24 panel">19-24</div>
+			</div>
+			<div class="row">
+				<div class="col-5-6 panel">5-6</div>
+			</div>
+			<div class="row">
+				<div class="col-7-8 panel">7-8</div>
+			</div>
+			<div class="row">
+				<div class="col-11-12 panel">11-12</div>
+			</div>
+			<div class="row">
+				<div class="col-23-24 panel">23-24</div>
+			</div>
+			<div class="row">
+				<div class="col-1 panel">1 ou 24-24</div>
+			</div>
+
+			<h3>5ths-Based Cols</h3>
+			<div class="row">
+				<div class="col-1-5 panel">1-5</div>
+			</div>
+			<div class="row">
+				<div class="col-2-5 panel">2-5</div>
+			</div>
+			<div class="row">
+				<div class="col-3-5 panel">3-5</div>
+			</div>
+			<div class="row">
+				<div class="col-4-5 panel">4-5</div>
+			</div>
+			<div class="row">
+				<div class="col-1 panel">1 / 24-24</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/sidebar.js"></script>
+</body>
+</html>
