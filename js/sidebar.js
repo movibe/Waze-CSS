@@ -3,6 +3,7 @@
     var layout   = document.getElementById('layout'),
         menu     = document.getElementById('menu'),
         menuLink = document.getElementById('menuLink');
+        navbarLink = document.getElementById('navbarLink');
 
     function toggleClass(element, className) {
         var classes = element.className.split(/\s+/),
@@ -29,6 +30,17 @@
         toggleClass(layout, active);
         toggleClass(menu, active);
         toggleClass(menuLink, active);
+        toggleClass(navbar, active);
+    };
+
+
+
+    
+    navbarLink.onclick = function (e) {
+        var active = 'active';
+
+        e.preventDefault();
+        toggleClass(navbar, active);
     };
 
 }(this, this.document));

@@ -1,0 +1,201 @@
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+#layout,
+#sidebar,
+#menuLink {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+#sidebar ul {
+    border: none;
+    list-style: none;
+    background: transparent;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+#sidebar ul a li{
+    text-transform: capitalize;
+    color: #888;
+    text-decoration: none;
+    width: 190px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+#sidebar ul li:hover{
+    background-color: #333;
+}
+#sidebar ul li.selected{
+    background-color: #333;
+}
+#sidebar ul li.header{
+    color: #fff !important;
+    border-bottom: 1px solid #333;
+    text-transform: uppercase;
+}
+#layout {
+    padding-left: 200px; 
+    left: 0;
+}
+#sidebar {
+    margin-left: -200px; 
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 200px; 
+    bottom: 0;
+    z-index: 1;
+    background: #191818;
+    overflow-y: auto;
+    -webkit-overflow-scroll: touch;
+}
+#menuLink {
+    display: none; 
+    top: 0;
+    left: 200px; 
+    background: #000;
+    font-size: 10px; 
+    z-index: 10;
+    width: 2em;
+    height: auto;
+    padding: 2.2em 1.6em;
+    background-image: url('../img/menu.png');
+    background-position: 10px 5px;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+    #layout {
+        position: relative;
+        padding-left: 0;
+    }
+        #layout.active {
+            position: relative;
+            left: 200px;
+        }
+            #layout.active #sidebar {
+                left: 200px;
+                width: 200px;
+            }
+    #sidebar {
+        left: 0;
+    }
+    #menuLink {
+        position: fixed;
+        left: 0;
+        display: block; 
+    }
+    #layout.active #menuLink {
+        left: 200px;
+    }
+    #page{
+      padding-top: 50px;
+    }
+}
+
+
+/* ==========================================================================
+    Menu
+   ========================================================================== */
+.Menu ul{
+  list-style: none;
+  display: block;
+}
+.menu ul li{
+  display: inline;
+  background-color: #FFF;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #000;
+  border: 1px solid #aaa;
+  margin: 0 auto;
+  float: left;
+}
+.menu ul li:hover{
+  background-color: #eee;
+}
+.menu ul li.left{
+  border-radius: 5px 0px 0px 5px;
+}
+.menu ul li.right{
+  border-radius: 0px 5px 5px 0px;
+}
+.menu ul li.selected{
+  background-color: #3C90DB;
+  color: #fff;
+}
+
+/* ==========================================================================
+    Navbar
+   ========================================================================== */
+#navbar{
+  width: 100%;
+  background-color: #191818;
+  min-height: 50px;
+}
+#navbar a.titulo{
+  color: #fff;
+  padding-top: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+#navbar ul{
+  list-style: none;
+  float: right;
+  margin-right: 25px;
+}
+#navbar ul li{
+  display: inline;
+  padding: 10px;
+}
+#navbar ul a li{
+  color: #888;
+}
+#navbar ul li:hover{
+    background-color: #333;
+}
+#navbarLink {
+    display: none; 
+    top: 0;
+    background: #000;
+    font-size: 10px; 
+    z-index: 10;
+    width: 2em;
+    height: auto;
+    padding: 2.2em 1.6em;
+    background-image: url('../img/menu.png');
+    background-position: 10px 5px;
+    background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+    #navbar ul{
+      display: none;
+      width: 100%;
+      background-color: #191818;
+      margin-top: 0;
+      margin-right: 0;
+    }
+    #navbarLink{
+      display: block;
+    }
+    #navbar.active ul{
+            transition: all 0.3s;
+            display: block;
+        }
+        #navbar.active ul li{
+            display: list-item;
+            background-color: #191818;
+        }
+        #navbar ul li:hover{
+            background-color: #333;
+        }
+}

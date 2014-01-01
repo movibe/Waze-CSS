@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+  
+/*Default Button*/
+.button{
+  transition: all 0.2s;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: 0;
+  background-color: #ddd;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #000;
+  height: 35px;
+  min-width: 90px;
+  margin: 10px;
+}
+.button:hover{
+  transition: all 0.2s;
+  background-color: #ccc;
+}
+
+/*Button Disabled*/
+.button-disabled{
+  background-color: #eee;
+  color: #bbb;
+}
+.button-disabled:hover{
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+/*Button Primary*/
+.button-primary{
+  background-color: #5BA4E5;
+  color: #fff;
+}
+.button-primary:hover{
+  background-color: #3C90DB;
+}
+
+/*Button Success*/
+.button-success {
+  background: rgb(28, 184, 65);
+  color: #fff;
+}
+.button-success:hover {
+  background: rgb(50, 200, 95);
+}
+
+/*Button Error*/
+.button-error {
+  background: rgb(202, 60, 60);
+  color: #fff;
+}
+.button-error:hover {
+  background: rgb(222, 80, 80);
+}
+
+/*Button Warning*/
+.button-warning {
+  background: rgb(223, 117, 20);
+  color: #fff;
+}
+.button-warning:hover {
+  background: rgb(243, 137, 40);
+}
+
+/*Button Secondary*/
+.button-secondary {
+  background: rgb(66, 184, 221);
+  color: #fff;
+}
+.button-secondary:hover {
+  background: rgb(86, 204, 241);
+}
